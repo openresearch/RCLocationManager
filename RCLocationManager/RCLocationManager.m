@@ -90,8 +90,6 @@ NSString * const RCLocationManagerNotificationLocationUserInfoKey = @"newLocatio
 
 - (id)init
 {
-    NSLog(@"[%@] init:", NSStringFromClass([self class]));
-    
     if (self = [super init]) {
         // Init
         [self _init];
@@ -102,9 +100,6 @@ NSString * const RCLocationManagerNotificationLocationUserInfoKey = @"newLocatio
 
 - (id)initWithUserDistanceFilter:(CLLocationDistance)userDistanceFilter userDesiredAccuracy:(CLLocationAccuracy)userDesiredAccuracy purpose:(NSString *)purpose delegate:(id<RCLocationManagerDelegate>)delegate
 {
-    
-    NSLog(@"[%@] init:", NSStringFromClass([self class]));
-    
     if (self = [super init]) {
         // Init
         [self _init];
@@ -120,8 +115,6 @@ NSString * const RCLocationManagerNotificationLocationUserInfoKey = @"newLocatio
 
 - (void)_init
 {
-    NSLog(@"[%@] _init:", NSStringFromClass([self class]));
-    
     _isUpdatingUserLocation = NO;
     _isOnlyOneRefresh = NO;
     
